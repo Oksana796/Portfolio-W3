@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --transparent: 0.7;
+}
+
+body {
+  position: relative;
+  margin: 70px auto 40px;
+  max-width: 1100px;
+}
+.container-fluid {
+  max-width: 1100px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 20px 0;
+  opacity: var(--transparent);
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+.blog {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+
+p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+  text-align: left;
+}
+#about-p {
+  background: white;
+  text-align: center;
+}
+.about-images {
+  border
+}
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.yoga-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+}
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+  text-align: left;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+@media(max-width:600px) {
+  .pic-bl {
+    display: none;
+  }
+  .p-bl {
+    display: block;
+  }
+  .yoga-link {
+    display: block;
+    text-align: center;
+  }
+  .p-ind {
+    background-color: white;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
